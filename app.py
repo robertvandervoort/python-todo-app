@@ -5,10 +5,14 @@ import string
 import random
 import json
 import requests
+import rook
 
 from datetime import datetime
 from random import randint
 from todos_store import Store
+
+if __name__ == "__main__":
+	rook.start(token='a7236965859705c80e116cde3ec0396eef5242dd6e454cf635e6cc708fbbc1bd')
 
 app = flask.Flask(__name__, static_url_path='/static')
 
